@@ -12,6 +12,7 @@ int main(){
 		printf("1 - Add\n");
 		printf("2 - Inorder Print\n");
 		printf("3 - Preorder Print\n");
+		printf("4 - Delete Tree\n");
 		printf("0 - Quit\n");
 		printf("\n");
 		printf("Enter choice: ");
@@ -39,6 +40,12 @@ int main(){
 				printf("Tree: ");
 				preorder(root);
 				printf("\n");
+				break;
+
+			case '4':
+				deltree(root);
+				root = NULL;
+				printf("Deleted!\n");
 				break;
 
 			case '0':

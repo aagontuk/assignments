@@ -32,7 +32,10 @@ struct tnode* addnode(struct tnode *root, int data){
 }
 
 void deltree(struct tnode *root){
-
+	if(root == NULL) return;
+	deltree(root->left);
+	deltree(root->right);
+	free(root);
 }
 
 void inorder(struct tnode *root){

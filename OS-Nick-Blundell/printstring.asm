@@ -1,3 +1,6 @@
+%ifndef PRINT_STRING_ASM
+%define PRINT_STRING_ASM
+
 PRINT_STRING:
 	pusha
 	mov ah, 0x0e
@@ -13,3 +16,5 @@ PRINT_STRING:
 	OUT:
 		popa
 		ret
+
+%endif

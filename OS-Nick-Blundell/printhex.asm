@@ -1,6 +1,9 @@
+%ifndef PRINT_HEX_ASM
+%define PRINT_HEX_ASM
+
 ; This routine will print value of dx register
 ; into hex
-
+PRINT_HEX:
 ; Hex Template Manipulation
 mov bx, HEX_TEMP
 add bx, 5
@@ -30,7 +33,9 @@ HOUT:
 mov bx, HEX_TEMP
 call PRINT_STRING
 
-%include "print_string.asm"
+%include "printstring.asm"
 
 HEX_TEMP:
 	db '0x0000', 0
+
+%endif

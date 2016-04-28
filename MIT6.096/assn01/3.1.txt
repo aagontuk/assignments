@@ -1,0 +1,9 @@
+1. Didn't compile. Conflicting declaration error shown.
+
+2. Program compiles. It prints A in standard output.
+
+3. Inner block declaration is used.
+
+4. Outer block declaration is used.
+
+5. Header file is not in the right place. So cout is not defined in main. Moving header file to the top will solve the error.

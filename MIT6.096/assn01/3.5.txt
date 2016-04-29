@@ -1,0 +1,5 @@
+1. Its doing multiplication.
+
+2. returning 1. Indicating an error to operating system.
+
+3. Counting series.

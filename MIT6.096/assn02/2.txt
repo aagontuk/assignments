@@ -1,0 +1,1 @@
+In each case it prints 123 * 2
